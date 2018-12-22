@@ -4121,7 +4121,7 @@ WINDOWS_1253_GREEK_CHAR_TO_ORDER = {
      255: 253,  # None
 }
 
-WINDOWS_1253_GREEK_MODEL = SingleByteCharSetModel(charset_name='windows-1253',
+WINDOWS_1253_GREEK_MODEL = SingleByteCharSetModel(charset_name='cp1253',
                                                   language='Greek',
                                                   char_to_order_map=WINDOWS_1253_GREEK_CHAR_TO_ORDER,
                                                   language_model=GREEK_LANG_MODEL,
@@ -4388,7 +4388,7 @@ ISO_8859_7_GREEK_CHAR_TO_ORDER = {
      255: 253,  # None
 }
 
-ISO_8859_7_GREEK_MODEL = SingleByteCharSetModel(charset_name='ISO-8859-7',
+ISO_8859_7_GREEK_MODEL = SingleByteCharSetModel(charset_name='iso8859_7',
                                                 language='Greek',
                                                 char_to_order_map=ISO_8859_7_GREEK_CHAR_TO_ORDER,
                                                 language_model=GREEK_LANG_MODEL,

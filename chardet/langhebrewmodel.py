@@ -4373,7 +4373,7 @@ WINDOWS_1255_HEBREW_CHAR_TO_ORDER = {
      255: 253,  # None
 }
 
-WINDOWS_1255_HEBREW_MODEL = SingleByteCharSetModel(charset_name='windows-1255',
+WINDOWS_1255_HEBREW_MODEL = SingleByteCharSetModel(charset_name='cp1255',
                                                    language='Hebrew',
                                                    char_to_order_map=WINDOWS_1255_HEBREW_CHAR_TO_ORDER,
                                                    language_model=HEBREW_LANG_MODEL,

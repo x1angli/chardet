@@ -48,7 +48,7 @@ class UTF8Prober(CharSetProber):
 
     @property
     def charset_name(self):
-        return "utf-8"
+        return 'utf_8'
 
     @property
     def language(self):

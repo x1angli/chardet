@@ -148,8 +148,8 @@ class HebrewProber(CharSetProber):
     # distance.
     MIN_MODEL_DISTANCE = 0.01
 
-    VISUAL_HEBREW_NAME = "ISO-8859-8"
-    LOGICAL_HEBREW_NAME = "windows-1255"
+    VISUAL_HEBREW_NAME = 'iso8859_8'
+    LOGICAL_HEBREW_NAME = 'cp1255'
 
     def __init__(self):
         super(HebrewProber, self).__init__()

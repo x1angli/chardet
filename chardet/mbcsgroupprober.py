@@ -1,4 +1,4 @@
-######################## BEGIN LICENSE BLOCK ########################
+  ######################## BEGIN LICENSE BLOCK ########################
 # The Original Code is Mozilla Universal charset detector code.
 #
 # The Initial Developer of the Original Code is
@@ -31,7 +31,7 @@ from .charsetgroupprober import CharSetGroupProber
 from .utf8prober import UTF8Prober
 from .sjisprober import SJISProber
 from .eucjpprober import EUCJPProber
-from .gb2312prober import GB2312Prober
+from .gb18030prober import GB18030Prober
 from .euckrprober import EUCKRProber
 from .cp949prober import CP949Prober
 from .big5prober import Big5Prober
@@ -45,7 +45,7 @@ class MBCSGroupProber(CharSetGroupProber):
             UTF8Prober(),
             SJISProber(),
             EUCJPProber(),
-            GB2312Prober(),
+            GB18030Prober(),
             EUCKRProber(),
             CP949Prober(),
             Big5Prober(),

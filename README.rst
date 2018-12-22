@@ -1,6 +1,19 @@
 Chardet: The Universal Character Encoding Detector
 --------------------------------------------------
 
+.. note::
+   This project is forked from the original chardet repo. The reasons for this forked projects:
+
+   1. The original chardet does not handle GB2312-like family encoding very well. It is supposed to return `gb18030` rather than `gb2312`
+   2. This project returns the encoding names that are consistent with Python's native naming, see:
+
+      https://docs.python.org/3.5/library/codecs.html#standard-encodings
+      https://docs.python.org/3.6/library/codecs.html#standard-encodings
+      https://docs.python.org/3.7/library/codecs.html#standard-encodings
+
+   3. There are certain encodings that can be recognized by chardet, but not supported by Python's native codec.
+
+
 .. image:: https://img.shields.io/travis/chardet/chardet/stable.svg
    :alt: Build status
    :target: https://travis-ci.org/chardet/chardet
@@ -18,7 +31,7 @@ Chardet: The Universal Character Encoding Detector
 
 Detects
  - ASCII, UTF-8, UTF-16 (2 variants), UTF-32 (4 variants)
- - Big5, GB2312, EUC-TW, HZ-GB-2312, ISO-2022-CN (Traditional and Simplified Chinese)
+ - Big5, gb18030(gb2312), EUC-TW, HZ-GB-2312, ISO-2022-CN (Traditional and Simplified Chinese)
  - EUC-JP, SHIFT_JIS, CP932, ISO-2022-JP (Japanese)
  - EUC-KR, ISO-2022-KR (Korean)
  - KOI8-R, MacCyrillic, IBM855, IBM866, ISO-8859-5, windows-1251 (Cyrillic)
@@ -28,11 +41,7 @@ Detects
  - ISO-8859-8, windows-1255 (Visual and Logical Hebrew)
  - TIS-620 (Thai)
 
-.. note::
-   Our ISO-8859-2 and windows-1250 (Hungarian) probers have been temporarily
-   disabled until we can retrain the models.
-
-Requires Python 2.7 or 3.4+.
+Requires Python 2.7 or 3.5+.
 
 Installation
 ------------

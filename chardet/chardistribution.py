@@ -29,8 +29,8 @@ from .euctwfreq import (EUCTW_CHAR_TO_FREQ_ORDER, EUCTW_TABLE_SIZE,
                         EUCTW_TYPICAL_DISTRIBUTION_RATIO)
 from .euckrfreq import (EUCKR_CHAR_TO_FREQ_ORDER, EUCKR_TABLE_SIZE,
                         EUCKR_TYPICAL_DISTRIBUTION_RATIO)
-from .gb2312freq import (GB2312_CHAR_TO_FREQ_ORDER, GB2312_TABLE_SIZE,
-                         GB2312_TYPICAL_DISTRIBUTION_RATIO)
+from .gb18030freq import (GB_CHAR_TO_FREQ_ORDER, GB_TABLE_SIZE,
+                          GB_TYPICAL_DISTRIBUTION_RATIO)
 from .big5freq import (BIG5_CHAR_TO_FREQ_ORDER, BIG5_TABLE_SIZE,
                        BIG5_TYPICAL_DISTRIBUTION_RATIO)
 from .jisfreq import (JIS_CHAR_TO_FREQ_ORDER, JIS_TABLE_SIZE,
@@ -148,12 +148,12 @@ class EUCKRDistributionAnalysis(CharDistributionAnalysis):
             return -1
 
 
-class GB2312DistributionAnalysis(CharDistributionAnalysis):
+class GBDistributionAnalysis(CharDistributionAnalysis):
     def __init__(self):
-        super(GB2312DistributionAnalysis, self).__init__()
-        self._char_to_freq_order = GB2312_CHAR_TO_FREQ_ORDER
-        self._table_size = GB2312_TABLE_SIZE
-        self.typical_distribution_ratio = GB2312_TYPICAL_DISTRIBUTION_RATIO
+        super(GBDistributionAnalysis, self).__init__()
+        self._char_to_freq_order = GB_CHAR_TO_FREQ_ORDER
+        self._table_size = GB_TABLE_SIZE
+        self.typical_distribution_ratio = GB_TYPICAL_DISTRIBUTION_RATIO
 
     def get_order(self, byte_str):
         # for GB2312 encoding, we are interested

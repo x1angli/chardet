@@ -76,7 +76,7 @@ BIG5_SM_MODEL = {'class_table': BIG5_CLS,
                  'class_factor': 5,
                  'state_table': BIG5_ST,
                  'char_len_table': BIG5_CHAR_LEN_TABLE,
-                 'name': 'Big5'}
+                 'name': 'big5'}
 
 # CP949
 
@@ -116,7 +116,7 @@ CP949_SM_MODEL = {'class_table': CP949_CLS,
                   'class_factor': 10,
                   'state_table': CP949_ST,
                   'char_len_table': CP949_CHAR_LEN_TABLE,
-                  'name': 'CP949'}
+                  'name': 'cp949'}
 
 # EUC-JP
 
@@ -169,7 +169,7 @@ EUCJP_SM_MODEL = {'class_table': EUCJP_CLS,
                   'class_factor': 6,
                   'state_table': EUCJP_ST,
                   'char_len_table': EUCJP_CHAR_LEN_TABLE,
-                  'name': 'EUC-JP'}
+                  'name': 'euc_jp'}
 
 # EUC-KR
 
@@ -219,7 +219,7 @@ EUCKR_SM_MODEL = {'class_table': EUCKR_CLS,
                 'class_factor': 4,
                 'state_table': EUCKR_ST,
                 'char_len_table': EUCKR_CHAR_LEN_TABLE,
-                'name': 'EUC-KR'}
+                'name': 'euc_kr'}
 
 # EUC-TW
 
@@ -332,7 +332,7 @@ GB2312_SM_MODEL = {'class_table': GB2312_CLS,
                    'class_factor': 7,
                    'state_table': GB2312_ST,
                    'char_len_table': GB2312_CHAR_LEN_TABLE,
-                   'name': 'GB2312'}
+                   'name': 'gb18030'}
 
 # Shift_JIS
 
@@ -385,7 +385,7 @@ SJIS_SM_MODEL = {'class_table': SJIS_CLS,
                'class_factor': 6,
                'state_table': SJIS_ST,
                'char_len_table': SJIS_CHAR_LEN_TABLE,
-               'name': 'Shift_JIS'}
+               'name': 'shift_jis'}
 
 # UCS2-BE
 
@@ -440,7 +440,7 @@ UCS2BE_SM_MODEL = {'class_table': UCS2BE_CLS,
                    'class_factor': 6,
                    'state_table': UCS2BE_ST,
                    'char_len_table': UCS2BE_CHAR_LEN_TABLE,
-                   'name': 'UTF-16BE'}
+                   'name': 'utf_16_be'}
 
 # UCS2-LE
 
@@ -495,7 +495,7 @@ UCS2LE_SM_MODEL = {'class_table': UCS2LE_CLS,
                  'class_factor': 6,
                  'state_table': UCS2LE_ST,
                  'char_len_table': UCS2LE_CHAR_LEN_TABLE,
-                 'name': 'UTF-16LE'}
+                 'name': 'utf_16_le'}
 
 # UTF-8
 
@@ -569,4 +569,4 @@ UTF8_SM_MODEL = {'class_table': UTF8_CLS,
                  'class_factor': 16,
                  'state_table': UTF8_ST,
                  'char_len_table': UTF8_CHAR_LEN_TABLE,
-                 'name': 'UTF-8'}
+                 'name': 'utf_8'}

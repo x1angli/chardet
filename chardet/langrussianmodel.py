@@ -4373,7 +4373,7 @@ IBM866_RUSSIAN_CHAR_TO_ORDER = {
      255: 255,  # '\xa0'
 }
 
-IBM866_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='IBM866',
+IBM866_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='cp866',
                                               language='Russian',
                                               char_to_order_map=IBM866_RUSSIAN_CHAR_TO_ORDER,
                                               language_model=RUSSIAN_LANG_MODEL,
@@ -4640,7 +4640,7 @@ WINDOWS_1251_RUSSIAN_CHAR_TO_ORDER = {
      255: 16,  # 'я'
 }
 
-WINDOWS_1251_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='windows-1251',
+WINDOWS_1251_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='cp1251',
                                                     language='Russian',
                                                     char_to_order_map=WINDOWS_1251_RUSSIAN_CHAR_TO_ORDER,
                                                     language_model=RUSSIAN_LANG_MODEL,
@@ -4907,7 +4907,7 @@ IBM855_RUSSIAN_CHAR_TO_ORDER = {
      255: 255,  # '\xa0'
 }
 
-IBM855_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='IBM855',
+IBM855_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='cp855',
                                               language='Russian',
                                               char_to_order_map=IBM855_RUSSIAN_CHAR_TO_ORDER,
                                               language_model=RUSSIAN_LANG_MODEL,
@@ -5174,7 +5174,7 @@ KOI8_R_RUSSIAN_CHAR_TO_ORDER = {
      255: 70,  # 'Ъ'
 }
 
-KOI8_R_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='KOI8-R',
+KOI8_R_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='koi8_r',
                                               language='Russian',
                                               char_to_order_map=KOI8_R_RUSSIAN_CHAR_TO_ORDER,
                                               language_model=RUSSIAN_LANG_MODEL,
@@ -5441,7 +5441,7 @@ MACCYRILLIC_RUSSIAN_CHAR_TO_ORDER = {
      255: 255,  # '€'
 }
 
-MACCYRILLIC_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='MacCyrillic',
+MACCYRILLIC_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='mac_cyrillic',
                                                    language='Russian',
                                                    char_to_order_map=MACCYRILLIC_RUSSIAN_CHAR_TO_ORDER,
                                                    language_model=RUSSIAN_LANG_MODEL,
@@ -5708,7 +5708,7 @@ ISO_8859_5_RUSSIAN_CHAR_TO_ORDER = {
      255: 255,  # 'џ'
 }
 
-ISO_8859_5_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='ISO-8859-5',
+ISO_8859_5_RUSSIAN_MODEL = SingleByteCharSetModel(charset_name='iso8859_5',
                                                   language='Russian',
                                                   char_to_order_map=ISO_8859_5_RUSSIAN_CHAR_TO_ORDER,
                                                   language_model=RUSSIAN_LANG_MODEL,

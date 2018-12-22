@@ -42,7 +42,7 @@ class CP949Prober(MultiByteCharSetProber):
 
     @property
     def charset_name(self):
-        return "CP949"
+        return "cp949"
 
     @property
     def language(self):

@@ -4,6 +4,7 @@
 PKG-INFO
 /dist
 /build
+.idea/
 .hypothesis
 .cache
 .eggs

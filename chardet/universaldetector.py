@@ -69,14 +69,14 @@ class UniversalDetector(object):
     HIGH_BYTE_DETECTOR = re.compile(b'[\x80-\xFF]')
     ESC_DETECTOR = re.compile(b'(\033|~{)')
     WIN_BYTE_DETECTOR = re.compile(b'[\x80-\x9F]')
-    ISO_WIN_MAP = {'iso-8859-1': 'Windows-1252',
-                   'iso-8859-2': 'Windows-1250',
-                   'iso-8859-5': 'Windows-1251',
-                   'iso-8859-6': 'Windows-1256',
-                   'iso-8859-7': 'Windows-1253',
-                   'iso-8859-8': 'Windows-1255',
-                   'iso-8859-9': 'Windows-1254',
-                   'iso-8859-13': 'Windows-1257'}
+    ISO_WIN_MAP = {'iso8859_1': 'cp1252',
+                   'iso8859_2': 'cp1250',
+                   'iso8859_5': 'cp1251',
+                   'iso8859_6': 'cp1256',
+                   'iso8859_7': 'cp1253',
+                   'iso8859_8': 'cp1255',
+                   'iso8859_9': 'cp1254',
+                   'iso8859_13': 'cp1257'}
 
     def __init__(self, lang_filter=LanguageFilter.ALL):
         self._esc_charset_prober = None
@@ -135,15 +135,14 @@ class UniversalDetector(object):
         if not self._got_data:
             # If the data starts with BOM, we know it is UTF
             if byte_str.startswith(codecs.BOM_UTF8):
-                # EF BB BF  UTF-8 with BOM
-                self.result = {'encoding': "UTF-8-SIG",
+                # EF BB BF  utf_8 with BOM
+                self.result = {'encoding': 'utf_8_sig',
                                'confidence': 1.0,
                                'language': ''}
-            elif byte_str.startswith((codecs.BOM_UTF32_LE,
-                                      codecs.BOM_UTF32_BE)):
-                # FF FE 00 00  UTF-32, little-endian BOM
-                # 00 00 FE FF  UTF-32, big-endian BOM
-                self.result = {'encoding': "UTF-32",
+            elif byte_str.startswith((codecs.BOM_UTF32_LE, codecs.BOM_UTF32_BE)):
+                # FF FE 00 00  utf_32, little-endian BOM
+                # 00 00 FE FF  utf_32, big-endian BOM
+                self.result = {'encoding': "utf_32",
                                'confidence': 1.0,
                                'language': ''}
             elif byte_str.startswith(b'\xFE\xFF\x00\x00'):
@@ -157,9 +156,9 @@ class UniversalDetector(object):
                                'confidence': 1.0,
                                'language': ''}
             elif byte_str.startswith((codecs.BOM_LE, codecs.BOM_BE)):
-                # FF FE  UTF-16, little endian BOM
-                # FE FF  UTF-16, big endian BOM
-                self.result = {'encoding': "UTF-16",
+                # FF FE  utf_16, little endian BOM
+                # FE FF  utf_16, big endian BOM
+                self.result = {'encoding': "utf_16",
                                'confidence': 1.0,
                                'language': ''}
 

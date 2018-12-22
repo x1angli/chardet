@@ -4640,7 +4640,7 @@ ISO_8859_2_HUNGARIAN_CHAR_TO_ORDER = {
      255: 253,  # '˙'
 }
 
-ISO_8859_2_HUNGARIAN_MODEL = SingleByteCharSetModel(charset_name='ISO-8859-2',
+ISO_8859_2_HUNGARIAN_MODEL = SingleByteCharSetModel(charset_name='iso8859_2',
                                                     language='Hungarian',
                                                     char_to_order_map=ISO_8859_2_HUNGARIAN_CHAR_TO_ORDER,
                                                     language_model=HUNGARIAN_LANG_MODEL,

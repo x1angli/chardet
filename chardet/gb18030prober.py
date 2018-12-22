@@ -27,19 +27,19 @@
 
 from .mbcharsetprober import MultiByteCharSetProber
 from .codingstatemachine import CodingStateMachine
-from .chardistribution import GB2312DistributionAnalysis
+from .chardistribution import GBDistributionAnalysis
 from .mbcssm import GB2312_SM_MODEL
 
-class GB2312Prober(MultiByteCharSetProber):
+class GB18030Prober(MultiByteCharSetProber):
     def __init__(self):
-        super(GB2312Prober, self).__init__()
+        super(GB18030Prober, self).__init__()
         self.coding_sm = CodingStateMachine(GB2312_SM_MODEL)
-        self.distribution_analyzer = GB2312DistributionAnalysis()
+        self.distribution_analyzer = GBDistributionAnalysis()
         self.reset()
 
     @property
     def charset_name(self):
-        return "GB2312"
+        return "gb18030"
 
     @property
     def language(self):

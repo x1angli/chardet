@@ -4640,7 +4640,7 @@ WINDOWS_1251_BULGARIAN_CHAR_TO_ORDER = {
      255: 16,  # 'я'
 }
 
-WINDOWS_1251_BULGARIAN_MODEL = SingleByteCharSetModel(charset_name='windows-1251',
+WINDOWS_1251_BULGARIAN_MODEL = SingleByteCharSetModel(charset_name='cp1251',
                                                       language='Bulgarian',
                                                       char_to_order_map=WINDOWS_1251_BULGARIAN_CHAR_TO_ORDER,
                                                       language_model=BULGARIAN_LANG_MODEL,
